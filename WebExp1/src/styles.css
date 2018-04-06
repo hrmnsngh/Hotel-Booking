@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+*{
+    font-size: 14px;
+}
+
+body{
+    background: url(../src/assets/images/bck2.jpg);
+    background-size:auto;
+
+}
+.label-color{
+    color: rgba(184, 194, 206, 0.925);
+}
+.well{
+
+    background-color:rgba(154, 209, 157, 0.705);
+    
+    }

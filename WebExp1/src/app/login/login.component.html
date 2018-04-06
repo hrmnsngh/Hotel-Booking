@@ -1,0 +1,58 @@
+<div class="login-container">
+  <div class="login">
+
+    <div class="login-box col-md-12">
+      <form [formGroup]="loginForm" class="form-vertical col-md-6 col-md-offset-8 " (ngSubmit)="login(loginForm)" autocomplete="off">
+
+        <div>
+          <img src=".\assets\images\Capture.png" alt="admin" class="img-resp">
+        </div>
+        <div class="form-group">
+          <label class="label-color">Username:</label>
+          <input class="form-control" type="text" formControlName="username" placeholder="username">
+          <div *ngIf="loginForm.controls['username'].invalid && (loginForm.controls['username'].dirty || loginForm.controls['username'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="loginForm.controls['username'].errors.required">
+              Username is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="label-color">Password:</label>
+          <div class="input-group">
+            <input [attr.type]="showPassword ? 'password': 'text'" id="pass" class="form-control" type="password" formControlName="password"
+              placeholder="password">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" (click)="showPass()">
+                <span class="glyphicon glyphicon-eye-open" *ngIf="showPassword">Show</span>
+                <span class="glyphicon glyphicon-eye-open" *ngIf="!showPassword">Hide</span>
+              </button>
+            </span>
+          </div>
+          <div *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="loginForm.controls['password'].errors.required">
+              Password is required.
+            </div>
+          </div>
+          <div *ngIf="loginAttempt" class="alert alert-danger">
+            Username or password is incorrect
+          </div>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-success" [disabled]="!loginForm.valid">Login </button>
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          <button type="click" class="btn btn-primary" routerLink="/register">Register</button>
+          &nbsp;&nbsp;&nbsp;
+          <a class="link-resp" routerLink="/forgotpassword">Forgot password</a>
+        </div>
+
+
+      </form>
+    </div>
+
+
+  </div>
+
+</div>

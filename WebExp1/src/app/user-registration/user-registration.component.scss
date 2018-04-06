@@ -1,0 +1,21 @@
+.register-container {
+    .register {
+        padding-top: 10%;
+        margin-left: 20%;
+        margin-right: 20%;
+        
+        
+        .register-box {
+            border: 1px solid lightblue;
+            padding: 15px;
+        
+
+            .img-resp {
+                height: 100px;
+                width: 100px;
+                border-radius: 90px;
+            }
+            
+        }
+    }
+}

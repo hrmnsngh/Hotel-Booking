@@ -1,0 +1,126 @@
+<div class="register-container">
+  <div class="register">
+
+    <div class="register-box col-md-12">
+      <form [formGroup]="registerForm" class="form-vertical col-md-6 col-md-offset-8 " (ngSubmit)="register(registerForm)" autocomplete="off">
+
+
+        <div class="form-group">
+          <label class="label-color">First Name:</label>
+          <input class="form-control" type="text" formControlName="fname" placeholder="First Name">
+          <div *ngIf="registerForm.controls['fname'].invalid && (registerForm.controls['fname'].dirty || registerForm.controls['fname'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="registerForm.controls['fname'].errors.required">
+              First Name is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="label-color">Last Name:</label>
+          <input class="form-control" type="text" formControlName="lname" placeholder="Last Name">
+          <div *ngIf="registerForm.controls['lname'].invalid && (registerForm.controls['lname'].dirty || registerForm.controls['lname'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="registerForm.controls['lname'].errors.required">
+              Last Name is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="label-color">User Name:</label>
+          <input class="form-control" type="text" formControlName="username" placeholder="User Name">
+          <div *ngIf="registerForm.controls['username'].invalid && (registerForm.controls['username'].dirty || registerForm.controls['username'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="registerForm.controls['username'].errors.required">
+              Username is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="label-color">Password:</label>
+          <input class="form-control" type="password" formControlName="password" placeholder="Password">
+          <div *ngIf="registerForm.controls['password'].invalid && (registerForm.controls['password'].dirty || registerForm.controls['password'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="registerForm.controls['password'].errors.required">
+              Username is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="label-color">Address Line 1:</label>
+          <input class="form-control" type="text" formControlName="addressLine1" placeholder="Address Line1">
+          <div *ngIf="registerForm.controls['addressLine1'].invalid && (registerForm.controls['addressLine1'].dirty || registerForm.controls['addressLine1'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="registerForm.controls['addressLine1'].errors.required">
+              Address Line1 is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="label-color">Address Line 2:</label>
+          <input class="form-control" type="text" formControlName="addressLine2" placeholder="Address Line2">
+          <div *ngIf="registerForm.controls['addressLine2'].invalid && (registerForm.controls['addressLine2'].dirty || registerForm.controls['addressLine2'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="registerForm.controls['addressLine2'].errors.required">
+              Address Line2 is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="label-color">City:</label>
+          <input class="form-control" type="text" formControlName="city" placeholder="City">
+          <div *ngIf="registerForm.controls['city'].invalid && (registerForm.controls['city'].dirty || registerForm.controls['city'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="registerForm.controls['city'].errors.required">
+              City is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="label-color">Pincode:</label>
+          <input class="form-control" type="text" formControlName="pincode" placeholder="Pincode">
+          <div *ngIf="registerForm.controls['pincode'].invalid && (registerForm.controls['pincode'].dirty || registerForm.controls['pincode'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="registerForm.controls['pincode'].errors.required">
+              Pincode is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="label-color">State:</label>
+          <input class="form-control" type="text" formControlName="state" placeholder="State">
+          <div *ngIf="registerForm.controls['state'].invalid && (registerForm.controls['state'].dirty || registerForm.controls['state'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="registerForm.controls['state'].errors.required">
+              State is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="label-color">Country:</label>
+          <input class="form-control" type="text" formControlName="country" placeholder="Country">
+          <div *ngIf="registerForm.controls['country'].invalid && (registerForm.controls['country'].dirty || registerForm.controls['country'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="registerForm.controls['country'].errors.required">
+              Country is required.
+            </div>
+          </div>
+        </div>
+        <!--<div>
+          <label class="label-color">Upload Image :</label>
+          <input class="form-control" type="file" formControlName="image" placeholder="Image">
+        </div>-->
+
+        <div>
+          <button type="submit" class="btn btn-success">Register</button>
+
+        </div>
+
+
+      </form>
+    </div>
+
+
+  </div>
+
+</div>

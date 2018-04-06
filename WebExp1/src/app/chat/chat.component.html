@@ -1,0 +1,24 @@
+<div class="chat-container">
+  
+    <div class="chat">
+      <div >
+        <textarea class="chat-box" rows="10" cols="30" [(ngModel)]="message"></textarea>
+        <button class="btn btn-success" (click)="post()">Send</button>
+      </div>
+    </div>
+&nbsp;
+&nbsp;
+    <div class="well col-md-6" *ngIf="messageStatus">
+      <div>
+        <h2>Chat History</h2>
+        {{currentDate | date}}
+        <br>
+        {{message}}
+        &nbsp;
+        &nbsp;
+        {{currentDate | date :'shortTime'}}
+      </div>
+    </div>
+
+
+</div>
