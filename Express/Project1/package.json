@@ -1,0 +1,14 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "Experimenting with the concepts of ExpressJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Harman Singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

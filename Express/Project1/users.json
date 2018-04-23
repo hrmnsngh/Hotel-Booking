@@ -1,0 +1,22 @@
+{
+    "id1": {
+        "userName": "Harman",
+        "password": "singh"
+    },
+    "id2":{
+        "userName": "user1",
+        "password": "password1"
+    },
+    "id3":{
+        "userName": "user2",
+        "password": "password2"
+    },
+    "id4":{
+        "userName": "user3",
+        "password": "password3"
+    },
+    "id5":{
+        "userName": "user4",
+        "password": "password4"
+    }
+}

@@ -1,0 +1,70 @@
+<div>
+  <label>Password : </label>
+  <input type="text" id="search" placeholder="typedText">
+</div>
+<form [formGroup]="vKeyForm" (ngSubmit)="vKey(vKeyForm)">
+  <div class="grid-container">
+    <button class="grid-item">~</button>
+    <button class="grid-item">1</button>
+    <button class="grid-item">2</button>
+    <button class="grid-item">3</button>
+    <button class="grid-item">4</button>
+    <button class="grid-item">5</button>
+    <button class="grid-item">6</button>
+    <button class="grid-item">7</button>
+    <button class="grid-item">8</button>
+    <button class="grid-item">9</button>
+    <button class="grid-item">0</button>
+    <button class="grid-item">-</button>
+    <button class="grid-item">=</button>
+    <button class="grid-item">Backspace</button>
+  </div>
+  <div class="grid-container">
+    <button class="grid-item">Tab</button>
+    <button class="grid-item">q</button>
+    <button class="grid-item">w</button>
+    <button class="grid-item">e</button>
+    <button class="grid-item">r</button>
+    <button class="grid-item">t</button>
+    <button class="grid-item">y</button>
+    <button class="grid-item">u</button>
+    <button class="grid-item">i</button>
+    <button class="grid-item">o</button>
+    <button class="grid-item">p</button>
+    <button class="grid-item">[</button>
+    <button class="grid-item">]</button>
+    <button class="grid-item">\</button>
+  </div>
+  <div class="grid-container">
+    <button class="grid-item">Caps</button>
+    <button class="grid-item form-control" formControlName="a">a</button>
+    <button class="grid-item" formControlName="s">s</button>
+    <button class="grid-item" formControlName="d">d</button>
+    <button class="grid-item" formControlName="f">f</button>
+    <button class="grid-item">g</button>
+    <button class="grid-item">h</button>
+    <button class="grid-item">j</button>
+    <button class="grid-item">k</button>
+    <button class="grid-item">l</button>
+    <button class="grid-item">;</button>
+    <button class="grid-item">'</button>
+    <button class="grid-item">Enter</button>
+
+  </div>
+
+  <div class="grid-container">
+    <button class="grid-item">Shift</button>
+    <button class="grid-item">z</button>
+    <button class="grid-item">x</button>
+    <button class="grid-item">c</button>
+    <button class="grid-item">v</button>
+    <button class="grid-item">b</button>
+    <button class="grid-item">n</button>
+    <button class="grid-item">m</button>
+    <button class="grid-item">,</button>
+    <button class="grid-item">.</button>
+    <button class="grid-item">/</button>
+    <button class="grid-item">Space</button>
+  </div>
+
+</form>

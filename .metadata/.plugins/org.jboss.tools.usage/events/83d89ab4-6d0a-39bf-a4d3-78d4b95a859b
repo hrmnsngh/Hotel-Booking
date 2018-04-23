@@ -1,0 +1,11 @@
+#Thu Mar 22 10:16:45 IST 2018
+vl=How many times the 'Finish' button pressed during the day
+l=Wizard class name
+ct=jbt
+d=1521694005852
+c=0
+cmp=usage
+a=finishWizard
+cl=com.genuitec.eclipse.modernweb.angular2.ui.project.ImportExistingProjectWizard
+v=2.1.1
+s=0
