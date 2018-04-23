@@ -12,6 +12,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { GetUsersService } from './get-users.service';
 import { LoginService } from './login.service';
 import { ChatComponent } from './chat/chat.component';
+import { CaptchaLoginComponent } from './captcha-login/captcha-login.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ChatComponent } from './chat/chat.component';
     LoginComponent,
     UserRegistrationComponent,
     ForgotPasswordComponent,
-    ChatComponent
+    ChatComponent,
+    CaptchaLoginComponent
   ],
   imports: [
     BrowserModule,
