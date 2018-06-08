@@ -1,0 +1,67 @@
+<div class="container">
+<div *ngIf="!submitted">
+<h3>Book Hotel</h3>
+<div class="default-panel">
+  <form>
+    <table>
+        <tr class="form-group">
+            <td> User name: 
+              <input type="text" value="User Name" [(ngModel)]="userName" name="userName" class="form-control" required>
+            </td>
+            
+            <td > Hotel name: 
+                <input type="text" value="{{selectedHotel.name}}"  class="form-control" >
+              </td>
+            </tr>
+          <tr class="form-group">
+              <td> User Address: 
+                <input type="text" value="User Address" [(ngModel)]="userAddress" name="userAddress" class="form-control" required>
+              </td>
+              <td> Location: 
+                  <input type="text" value="User Address Location" [(ngModel)]="userLocation" name="userLocation" class="form-control" required>
+                </td>
+                <td> Zip: 
+                  <input type="text" value="User Address Zip" [(ngModel)]="userZip" name="userZip" class="form-control" required>
+                </td>
+            </tr>
+            <tr class="form-group">
+                <td> Hotel Address: 
+                  <input type="text" value="{{selectedHotel.address.address}}" class="form-control">
+                </td>
+                <td> Location: 
+                    <input type="text" value="{{selectedHotel.address.location}}" class="form-control">
+                  </td>
+                  <td> Zip: 
+                    <input type="text" value="{{selectedHotel.address.location}}" class="form-control">
+                  </td>
+              </tr>
+              <tr >
+                  <td> 
+                    <button (onclick)="saveData()">Save</button>
+                  </td>
+                 
+                </tr>
+
+    </table>
+   
+  </form>
+
+  <br>
+  <br>
+  <div text-align="center">
+   <h3>Detials submitted by you:</h3> 
+    <h4>{{userName}}</h4><br>
+    <h4>{{userAddress}}</h4><br>
+    {{userLocation}}<br>
+    {{userZip}}<br>
+    {{selectedHotel.name}}<br>
+    {{selectedHotel.address.address}}<br>
+    {{selectedHotel.address.location}}<br>
+    {{selectedHotel.address.zip}}<br>
+
+  </div>
+
+</div>
+ 
+</div>
+</div>

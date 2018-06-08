@@ -1,0 +1,38 @@
+
+
+    <h3>Search Hotels</h3>
+    
+   
+    <form  >
+        <div class="panel panel-default"  >
+            
+            <div style="padding:30px" class="form-group">
+                
+                Search String: <input type="text" [(ngModel)]="searchString" name="searchString" > 
+                
+              
+              
+                
+                  Maximum results : 
+                  <select >
+                    <option>5</option>
+                    <option>10</option>
+                    <option>20</option>
+                  </select>
+                  
+
+              
+                       
+                        
+                        <input type="submit" (click)="searchHotel(searchString)" [routerLink]="['/result']"  value="View Hotel" />
+                        
+            </div>
+        </div>    
+      </form>
+   
+    
+
+
+
+
+

@@ -1,0 +1,7 @@
+[
+    {"id":1,"name":"Lake View","address":"Lake View Resort, Surajkund, Faridabad, Haryana","dayrate":2500,"nightrate":2700},
+    {"id":2,"name":"Raj Hans","address":"Raj Hans Resort, Surajkund, Faridabad, Haryana","dayrate":3500,"nightrate":3700},
+    {"id":3,"name":"Shangri La","address":"Shangi La, Surajkund, Faridabad, Haryana","dayrate":4500,"nightrate":4900},
+    {"id":4,"name":"Marriot","address":"Marriot, Surajkund, Faridabad, Haryana","dayrate":2600,"nightrate":2700},
+    {"id":5,"name":"Akbar","address":"Akbar, Surajkund, Faridabad, Haryana","dayrate":4700,"nightrate":5000}
+]

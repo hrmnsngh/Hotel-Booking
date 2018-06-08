@@ -1,0 +1,33 @@
+<p>
+  hotel-external-data works!
+</p>
+
+
+<table border=2 align= center>
+  
+  <thead >
+    
+    <td>ID</td>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Address</td>
+    <td>Day Rate</td>
+    <td>Night Rate</td>
+</thead>
+  
+  <tr *ngFor="let item of hotels; let i = index"  [ngStyle]="{'background-color': i%2==0 ? 'lightcyan':'cyan'}"  >
+      
+  
+     
+
+
+  <td>{{item._id}}</td>
+  <td>{{item.id}}</td>
+  <td>{{item.name}}</td>
+  <td>{{item.address.address}}{{item.address.location}}{{item.address.zip}}</td>
+  <td>{{item.dayRate}}</td>
+  <td>{{item.nightRate}}</td>
+  
+  </tr>
+
+</table>

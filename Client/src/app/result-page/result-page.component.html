@@ -1,0 +1,27 @@
+<div>
+Hotel Results <br>
+<button class="btn btn-primary" [routerLink]="['/search']" >Change Search</button>
+   
+<br>
+<table class="table-bordered" border="black">
+    <thead class="tableHeadClass">
+        <td>Name</td>
+        <td>Address</td>
+        <td>City, State</td>
+        <td>Zip</td>
+        <td>Action</td>
+    </thead>
+    <tr *ngFor="let h of temporaryHotelData " onload="saveData(h)">
+       
+        <td>{{h.name}}</td>
+        <td>{{h.address.address}}</td>
+        <td>{{h.address.location}}</td>
+        <td>{{h.address.zip}}</td>
+        <td ><button (click)="viewHotel(h)" class="btn btn-primary" [routerLink]="['/viewhotel']">View Hotel</button></td>
+            
+
+    </tr>
+</table>
+
+
+</div>

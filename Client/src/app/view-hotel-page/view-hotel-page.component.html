@@ -1,0 +1,9 @@
+<div>
+    
+  
+   <h3> Hotel Name:  {{selectedHotel.name}}<br>
+    Address:  {{selectedHotel.address.address}} <br>{{selectedHotel.address.location}} <br>{{selectedHotel.address.zip}}<br>
+    Day Rate: {{selectedHotel.dayRate}} <br>
+    Night Rate: {{selectedHotel.nightRate}} <br>  </h3>
+    <button class="btn btn-success" [routerLink]="['/bookhotel']">Book Hotel</button>
+  </div>

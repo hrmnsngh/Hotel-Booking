@@ -1,0 +1,36 @@
+
+  header {
+    background-image: url(../assets/images/main-content.jpg);
+    margin: 15px;
+    
+    border-top: 15px solid #8AC50B;
+    border-bottom: 15px solid #8AC50B;
+    padding: 5px;
+    text-align: center;
+    background-color: #4D6E08;
+    text-align: center;
+  }
+
+  main{
+    margin-top: 10px;
+    margin-bottom: 10px;
+     
+    
+  }
+  
+  footer {
+    margin: 15px;
+    background-image: url(../assets/images/main-footer.jpg);
+    position: fixed;
+    font-weight: bold;
+    bottom:0px;
+    width: 100%;
+    text-align: center;
+
+  }
+  
+
+ 
+
+  
+  
